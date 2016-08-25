@@ -18,7 +18,7 @@ html, body {
 }
 body {
   -webkit-font-smoothing: antialiased;
-  background:url(../bgimg/bg1.jpg) no-repeat center center fixed;
+  background:url(../images/bg/bg1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -342,10 +342,10 @@ hr{
     padding-left:20px;
   }
   #nav ul > li > a {
-    background:url(../img/mob_bg1.png) no-repeat left bottom;
+    background:url(../images/mob_bg1.png) no-repeat left bottom;
   }
   #nav ul > li > ul > li > a {
-    background:url(../img/mob_bg2.png) no-repeat left bottom;
+    background:url(../images/mob_bg2.png) no-repeat left bottom;
   }
   /*#nav ul > li > ul {
         margin-bottom:20px;
