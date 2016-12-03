@@ -1,17 +1,13 @@
 <!doctype html>
-<html lang="">
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="description" content="mycooler Teilnahmebedingungen">
-    <meta name="keywords" content="mycooler Teilnahmebedingungen">
     <meta name="robots" content="index" />
     <meta name="revisit-after" content="3 days">
     <title>SAC Säntis</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
     <link href='https://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
 
     <!-- build:css styles/vendor.css -->
@@ -30,15 +26,10 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!--<div id="partner">
-	<strong>Partner des SAC Säntis</strong><br/>
-	<a href="https://www.baechli-bergsport.ch" target="_blank"><img src="images/partner/baechli.png"></a><br/>
-    <a href="http://www.sags.ch" target="_blank"><img src="images/partner/sags.png"></a>
-</div>-->
-    <button class="c-hamburger c-hamburger--htx" id="btn_nav"><span>toggle menu</span></button>
-    <div id="nav">
+    <button class="sacsaentis-nav-toggle c-hamburger c-hamburger--htx"><span>toggle menu</span></button>
+    <div class="sacsaentis-nav-pane">
       <ul>
-        <li><a href="tours.html">Tourenprogramm</a><img src="images/icon_new.png" id="icon_new" /></li>
+        <li><a href="tours.html">Tourenprogramm</a></li>
         <li><a href="index.html">Sektion Säntis</a>
           <ul>
             <li><a href="content.html">Organisation und Kontakte</a></li>
@@ -70,33 +61,69 @@
         </li>
         <li><a href="#">Links</a></li>
       </ul>
-      <div class="line"><hr></div>
+      <hr class="sacsaentis-nav-pane__separator">
       <a class="btn_fb" target="_blank" href="https://www.facebook.com/sacsaentis/"><img src="images/icon_fb.png"></a>
     </div>
 
-    <div id="next_tour">
-      <h1>Nächste Tour</h1>
+    <div class="news-box frontpage-box">
+      <h2 class="frontpage-box__title">Berichte &amp; News</h2>
       <ul>
         <li>
-          <span class="date">12.05.2016</span>
-          <span class="tour_name">Piz Tambo</span>
-          <span class="tour_kind">Skitour</span>
-            <span class="icons">
-            	<a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-           	</span>
+          <span class="news-box__date">12.05.2016</span>
+          <a class="news-box__link" href="content.html">SAC-Expeditionsteam realisiert Erstbegehung</a>
         </li>
         <li>
-          <span class="date">01.06.2016</span>
-          <span class="tour_name">Hochtourenkurs im B&uuml;ndnerland</span>
-          <span class="tour_kind">Kurs</span>
-            <span class="icons">
-            	<a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-           	</span>
+          <span class="news-box__date">02.05.2016</span>
+          <a class="news-box__link" href="#">Tag der offenen Hüttentüren am 3./4.9.2016</a>
+        </li>
+        <li>
+          <span class="news-box__date">02.05.2016</span>
+          <a class="news-box__link" href="#">Tag der offenen Hüttentüren am 3./4.9.2016</a>
+        </li>
+        <li>
+          <span class="news-box__date">02.05.2016</span>
+          <a class="news-box__link" href="#">Tag der offenen Hüttentüren am 3./4.9.2016</a>
+        </li>
+        <li>
+          <span class="news-box__date">02.05.2016</span>
+          <a class="news-box__link" href="#">Tag der offenen Hüttentüren am 3./4.9.2016</a>
         </li>
       </ul>
     </div>
+
+    <div class="tours-box frontpage-box frontpage-box--bottom">
+      <h2 class="frontpage-box__title">Nächste Touren</h2>
+      <ul>
+        <li>
+          <span class="tours-box__date">12.05.2016</span>
+          <a class="tours-box__name" href="tours.html">Piz Tambo</a>
+          <span class="tours-box__kind">Skitour</span>
+          <!--span class="icons">
+            <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+          </span-->
+        </li>
+        <li>
+          <span class="tours-box__date">01.06.2016</span>
+          <a class="tours-box__name" href="#">Hochtourenkurs im B&uuml;ndnerland</a>
+          <span class="tours-box__kind">Kurs</span>
+          <!--span class="icons">
+            <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+          </span-->
+        </li>
+        <li>
+          <span class="tours-box__date">17.10.2016</span>
+          <a class="tours-box__name" href="#">Skitouren in den Fjorden Norgwegens</a>
+          <span class="tours-box__kind">Skitour</span>
+          <!--span class="icons">
+            <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+          </span-->
+        </li>
+      </ul>
+    </div>
+
     <img src="images/footer.png" id="footer">
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
