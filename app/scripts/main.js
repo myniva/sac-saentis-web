@@ -1,28 +1,31 @@
-$(document).ready(function(){
-  height();
-  var toggle = document.getElementById('btn_nav');
-  toggleHandler(toggle);
-});
-$(window).resize(function(e) {
-  height();
-});
+/*
+ * https://github.com/callmenick/Animating-Hamburger-Icons
+ * Licensed under the MIT license, http://www.opensource.org/licenses/mit-license.php
+ * Copyright 2014, Call Me Nick
+ */
 
-function height() {
-  if($('#content_wrapper').height() < $(window).height()) {$('#content_wrapper').height($(window).height()-40);}
-}
+(function() {
 
-function toggleHandler(toggle) {
-  toggle.addEventListener( 'click', function(e) {
-    e.preventDefault();
-    if(this.classList.contains('is-active') === true) {
-      this.classList.remove('is-active')
-      $('#nav').fadeOut();
-      $('#next_tour ul').css('z-index',300);
-    }
-    else {
-      this.classList.add('is-active');
-      $('#nav').fadeIn();
-      $('#next_tour ul').css('z-index',10);
-    }
-  });
-}
+  'use strict';
+
+  var toggles = document.querySelectorAll('.c-hamburger');
+
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( 'click', function(e) {
+      e.preventDefault();
+      if (this.classList.contains('is-active') === true) {
+        this.classList.remove('is-active')
+        $('.sacsaentis-nav-pane').fadeOut();
+      } else {
+        this.classList.add('is-active')
+        $('.sacsaentis-nav-pane').fadeIn();
+      }
+    });
+  }
+
+})();
