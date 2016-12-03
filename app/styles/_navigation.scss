@@ -1,0 +1,118 @@
+
+.sacsaentis-nav-toggle {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index:500;
+}
+
+
+.sacsaentis-nav-pane {
+
+  position:absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background: rgba(226,0,15,0.8);
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  display: none; // initially, navigation should be hidden
+  z-index: 100;
+  color:#fff;
+
+  a {
+    line-height: 2em;
+    padding-left:20px;
+    color:#FFF;
+    float:left;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color:#000000;
+    text-decoration:none;
+  }
+
+  > ul {
+    width: 100%;
+    float: left;
+    position: relative;
+
+    > li {
+
+      clear:left;
+      display:block;
+
+      > a {
+        font-size: 1.2em;
+        font-weight: bold;
+        background:url(../images/mob_bg1.png) no-repeat left bottom;
+      }
+
+      > ul > li {
+        float:left;
+        clear:left;
+
+        > a {
+          background: url(../images/mob_bg2.png) no-repeat left bottom;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 20px;
+
+    a {
+      padding-left: 0px;
+    }
+
+    > ul {
+      > li {
+        > a {
+          font-size: 2em;
+          line-height: 1.4em;
+          background: none;
+        }
+
+        > ul {
+          clear: left;
+
+          > li {
+            clear: none;
+
+            > a {
+              padding-right: 20px;
+              background: none;
+            }
+          }
+        }
+      }
+    }
+
+    &__separator {
+      margin: 10px 0px;
+      clear: left;
+      width: 200px;
+      border-top: 1px solid #fff;
+    }
+  }
+
+  @media screen and (min-width: 1280px){
+    > ul > li {
+      > a {
+        padding-right: 20px;
+      }
+
+      > ul {
+        padding-top: 13px;
+        clear: none;
+      }
+    }
+  }
+
+}
