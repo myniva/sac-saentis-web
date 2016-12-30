@@ -1,3 +1,4 @@
+@import "variables";
 
 .sacsaentis-nav-toggle {
   display: block;
@@ -16,18 +17,18 @@
   width: 100%;
   min-height: 100%;
   height: auto;
-  background: rgba(226,0,15,0.8);
+  background: rgba($main-color, 0.9);
   box-sizing: border-box;
   padding-top: 10px;
   padding-bottom: 100px;
   display: none; // initially, navigation should be hidden
   z-index: 100;
-  color:#fff;
+  color: #fff;
 
   a {
     line-height: 2em;
     padding-left:20px;
-    color:#FFF;
+    color: #fff;
     float:left;
     text-decoration: none;
   }
@@ -48,8 +49,7 @@
       display:block;
 
       > a {
-        font-size: 1.2em;
-        font-weight: bold;
+        font-weight: $base-font-weight-bold;
         background:url(../images/mob_bg1.png) no-repeat left bottom;
       }
 
@@ -69,12 +69,13 @@
 
     a {
       padding-left: 0px;
+      line-height: 3.3em;
     }
 
     > ul {
       > li {
         > a {
-          font-size: 2em;
+          font-size: 2.6em;
           line-height: 1.4em;
           background: none;
         }

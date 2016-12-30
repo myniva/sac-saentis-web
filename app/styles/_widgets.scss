@@ -1,7 +1,7 @@
-.widget {}
+@import "variables";
 
 .widget__title {
-  color: #e2000f;
+  color: $main-color;
   font-size: 22px;
   font-weight: 700;
 
