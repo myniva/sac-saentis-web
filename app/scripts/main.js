@@ -20,10 +20,10 @@
       e.preventDefault();
       if (this.classList.contains('is-active') === true) {
         this.classList.remove('is-active')
-        $('.sacsaentis-nav-pane').fadeOut();
+        jQuery('.sacsaentis-nav-pane').fadeOut();
       } else {
         this.classList.add('is-active')
-        $('.sacsaentis-nav-pane').fadeIn();
+        jQuery('.sacsaentis-nav-pane').fadeIn();
       }
     });
   }
