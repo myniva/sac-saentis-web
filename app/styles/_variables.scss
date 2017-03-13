@@ -1,12 +1,21 @@
 
-$season-2016-01-background: "../images/bg/bg1.jpg";
-$season-2016-01-main-color: #e2000f;
+$season-2016-background: "../images/bg/2016.jpg";
+$season-2016-main-color: #e2000f;
 
-$season-2016-03-background: "../images/bg/bg1.jpg";
-$season-2016-03-main-color: #17543a;
+$season-2017-01-background: "../images/bg/2017-1.jpg";
+$season-2017-01-main-color: #7fc5d7;
 
-$background: $season-2016-03-background;
-$main-color: $season-2016-03-main-color;
+$season-2017-02-background: "../images/bg/2017-2.jpg";
+$season-2017-02-main-color: #5a87c5;
+
+$season-2017-03-background: "../images/bg/2017-3.jpg";
+$season-2017-03-main-color: #2a00c4;
+
+$season-2017-04-background: "../images/bg/2017-4.jpg";
+$season-2017-04-main-color: #715cc9;
+
+$background: $season-2017-01-background;
+$main-color: $season-2017-01-main-color;
 
 $text-color: black;
 $base-font-size: 18px;
